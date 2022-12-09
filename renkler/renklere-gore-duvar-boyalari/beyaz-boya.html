@@ -1,0 +1,1490 @@
+<!doctype html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+    <link rel="apple-touch-icon" sizes="57x57" href="fav/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="fav/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="fav/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="fav/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="fav/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="fav/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="fav/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="fav/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="fav/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="fav/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="fav/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="fav/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <base href="/">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="assets/css/style.css?v=0.11261" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.3.1/dist/css/splide.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="assets/css/menu.css?v=0.112" rel="stylesheet" crossorigin="anonymous">
+    <title>Beyaz Duvar Boyası Tonları ve Fiyatları | Filli Boya </title>
+    <meta content="Beyaz duvar boyası tonları ve fiyatlarını Filli Boya ile keşfedebilir, sizin için en uygun boyayı bulabilirsiniz. Daha fazlasını öğrenmek için tıklayın!" name="description" />
+    <meta content="carvist" name="author" />
+    <style>
+        @media(min-width:290px) and (max-width:410px) {
+            .animated-icon2 span:nth-child(1),
+            .animated-icon2 span:nth-child(2),
+            .animated-icon2 span:nth-child(3),
+            .animated-icon2 span:nth-child(4) {
+                transform: scale(0.8)
+            }
+        }
+        
+        .main-back-wrapper {
+            position: fixed;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 99;
+            display: none
+        }
+        
+        .side-bar {
+            position: fixed;
+            right: 0px;
+            height: 100vh;
+            width: 310px;
+            background: #fff;
+            z-index: 991;
+            transform: translateX(310px);
+            transition: all 500ms;
+        }
+        
+        .side-bar .bar-cart-list {
+            max-height: 90vh;
+            overflow: auto;
+            width: 90%;
+            margin: 0px auto;
+            min-height: 200px
+        }
+        
+        .animated-icon1,
+        .animated-icon2,
+        .animated-icon3 {
+            width: 30px;
+            height: 20px;
+            margin-top: 5px;
+            margin-left: 25px;
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+            -webkit-transition: .5s ease-in-out;
+            -moz-transition: .5s ease-in-out;
+            -o-transition: .5s ease-in-out;
+            transition: .5s ease-in-out;
+            cursor: pointer;
+        }
+        
+        .animated-icon1 span,
+        .animated-icon2 span,
+        .animated-icon3 span {
+            display: block;
+            position: absolute;
+            height: 3px;
+            width: 100%;
+            border-radius: 9px;
+            opacity: 1;
+            left: 0;
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+            -webkit-transition: .25s ease-in-out;
+            -moz-transition: .25s ease-in-out;
+            -o-transition: .25s ease-in-out;
+            transition: .25s ease-in-out;
+        }
+        
+        .animated-icon2 span {
+            background: #212529;
+            height: 1px;
+        }
+        /* Icon 3*/
+        
+        .animated-icon2 span:nth-child(1) {
+            top: 0px;
+        }
+        
+        .animated-icon2 span:nth-child(2),
+        .animated-icon2 span:nth-child(3) {
+            top: 10px;
+        }
+        
+        .animated-icon2 span:nth-child(4) {
+            top: 20px;
+        }
+        
+        .animated-icon2.open span:nth-child(1) {
+            top: 11px;
+            width: 0%;
+            left: 50%;
+        }
+        
+        .animated-icon2.open span:nth-child(2) {
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+        
+        .animated-icon2.open span:nth-child(3) {
+            -webkit-transform: rotate(-45deg);
+            -moz-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+        }
+        
+        .animated-icon2.open span:nth-child(4) {
+            top: 11px;
+            width: 0%;
+            left: 50%;
+        }
+        
+        .navbar,
+        .navbar-nav li {
+            position: unset
+        }
+        
+        .navbar-expand-lg .navbar-nav .dropdown-menu {
+            top: unset;
+            left: 0px
+        }
+        
+        .dropdown-toggle.show {
+            border-bottom: 3px solid #444;
+            margin-top: 2px
+        }
+        
+        .menu-second li a {
+            padding-top: 4px;
+            padding-bottom: 4px
+        }
+        
+        .menu-second {
+            font-size: 14px
+        }
+        
+        .navbar-nav .dropdown-menu {
+            box-shadow: 0px 20px 24px rgb(0 0 0 / 20%);
+            border: 0px;
+            border-radius: 0px;
+        }
+        
+        .sc-message--content.sent .sc-message--text p {
+            color: #fff
+        }
+        
+        .hover-black:hover {
+            background: #222;
+            color: #fff!important
+        }
+        
+        a.menu-link.menu-list-link,
+        a.menu-link.mega-menu-link {
+            padding: 15px 0px
+        }
+        
+        @media(max-width:992px) {
+            .menu-wrapper-new {
+                max-height: calc(100vh - 70px);
+                overflow: auto;
+            }
+        }
+        
+        @media (-webkit-device-pixel-ratio: 1.25) {
+            html {
+                zoom: 0.90;
+            }
+        }
+        
+        @media (-webkit-device-pixel-ratio: 1.50) {
+            html {
+                zoom: 0.75;
+            }
+        }
+        
+        @media(min-width:1640px) {
+            .main-menu-wrapper {
+                max-width: 1320px
+            }
+        }
+        
+        .modal-backdrop {
+            width: 100%!important;
+            height: 100%!important
+        }
+    </style>
+    <link rel="stylesheet" href="assets/css/mendo.css?v=0.1196">
+
+    <script>
+        ! function(f, b, e, v, n, t, s)
+
+        {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+
+            'https://connect.facebook.net/en_US/fbevents.js');
+
+        fbq('init', '218411165901816');
+
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+
+                         src="https://www.facebook.com/tr?id=218411165901816&ev=PageView&noscript=1"
+
+                         /></noscript>
+
+</head>
+
+<body>
+    <div class='search-wrapper' style='display:none'>
+        <div class='container'>
+            <div class='d-flex'>
+                <img class='my-auto pt-4' style="width:30px" src="./uploads/search-icon.svg">
+                <input type='text' class='search mx-4 w-100 xs-fs-18' placeholder='Aradığınız rengi ya da ürünü yazın'>
+                <img src="./uploads/close-icon.png" class='search-close hidden-xs my-auto pt-4 cursor-pointer'>
+            </div>
+            <div class='ps-4 ms-4 mt-2'>
+                <span class="badge bg-secondary pre-search cursor-pointer" data-title='Silan'>Silan</span>
+                <span class="badge bg-secondary pre-search cursor-pointer" data-title='Kahverengi'>Kahverengi</span>
+                <span class="badge bg-secondary pre-search cursor-pointer" data-title='Beyaz'>Beyaz</span>
+                <span class="badge bg-secondary pre-search cursor-pointer" data-title='Lületaşı'>Lületaşı</span>
+            </div>
+            <div class='results container pt-4' style='height:90vh;overflow:auto'>
+                <div class='row'>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-white border-bottom position-fixed" style="top:0px;z-index:9">
+        <div class="container-fluid main-menu-wrapper">
+            <div class="row">
+                <div class="col-6 col-lg-1 d-flex align-items-center">
+                    <a href="/" class="py-3">
+                        <img src="./uploads/filli-logo.png" class="main-logo mt-lg-0">
+                    </a>
+                </div>
+                <div class="col-6 col-lg-2 order-lg-2 d-flex align-items-center justify-content-end">
+                    <ul class="d-flex list-group list-group-horizontal">
+                        <li class="text-center p-0 list-group-item border-0 bg-transparent me-3 my-auto">
+                            <div class='search-icon cursor-pointer'>
+
+                                <i class="fal fa-search text-black fs-20"></i>
+                            </div>
+                        </li>
+                        <li class="text-center p-0 list-group-item border-0 bg-transparent me-3 my-auto">
+                            <a href='giris-yap' class='text-decoration-none'>
+
+                                <i class="fal fa-user text-black fs-20"></i>
+                            </a>
+
+                        </li>
+                        <li class="text-center p-0 list-group-item border-0 bg-transparent me-3 my-auto">
+                            <a href="favori-listelerim">
+                                <i class="fal fa-heart text-black fs-20"></i>
+
+                            </a>
+                        </li>
+                        <li class="text-center p-0 list-group-item border-0 d-block d-lg-block bg-transparent position-relative me-2 me-md-3 my-auto">
+                            <a class="cursor-pointer show-cart">
+                                <div class='position-absolute bg-danger d-none cart-count'></div>
+
+                                <i class="fal fa-shopping-cart text-black fs-20"></i>
+                            </a>
+                        </li>
+                        <li class="text-center p-0 list-group-item border-0 d-block d-lg-none bg-transparent my-auto">
+                            <button class="main-nav-trigger p-0 second-button" type="button" href="javascript:void(0);">
+<div class="animated-icon2 ms-2"><span></span><span></span><span></span><span></span></div>
+</button>
+                            <span class='d-none d-sm-inline-block ms-2 fw-bold' style='float:right;margin-top:7px'>MENÜ</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-9 order-lg-1 text-start text-md-center text-lg-center text-xl-center d-flex menu-wrapper-new">
+                    <nav class="navbar navbar-expand-xl navbar-light w-100 py-0">
+                        <div class="container-fluid p-0">
+                            <div class="h-100 w-100" id="navbarScroll">
+                                <div class='d-flex flex-column h-100 w-100'>
+                                    <nav role="navigation" class="main-nav-wrap my-auto">
+                                        <ul class="main-nav">
+                                            <li class="has-subnav">
+                                                <a href="/renkler" class="has-subnav-link">Renkler</a>
+                                                <ul class="main-dropdown subnav">
+                                                    <li class="" data-nav="1">
+                                                        <a href="/renkler/2023-yilin-renkleri" class="subnav-header border-none">2023 Yılın Renkleri</a>
+                                                    </li>
+                                                    <li class="" data-nav="1">
+                                                        <a href="/renkler/2022-yilin-renkleri" class="subnav-header border-none">2022 Yılın Renkleri</a>
+                                                    </li>
+                                                    <li class="" data-nav="1">
+                                                        <a href="/renkler/ic-cephe-boyalari" class="subnav-header border-none">İç Cephe Renkleri</a>
+                                                    </li>
+                                                    <li class="" data-nav="1">
+                                                        <a href="renkler/dis-cephe-boyalari" class="subnav-header border-none">Dış Cephe Renkleri</a>
+                                                    </li>
+                                                    <li class="" data-nav="1">
+                                                        <a href="renkler/kartelalar" class="subnav-header">İndirilebilir Kartelalar</a>
+                                                    </li>
+                                                    <li class="has-subnav" data-nav="2">
+                                                        <a href="/renkler/renklere-gore-duvar-boyalari" class="has-subnav-link subnav-header">Renklere Göre Duvar Boyaları</a>
+                                                        <ul class="subnav">
+                                                            <li><a href="/renkler/renklere-gore-duvar-boyalari/beyaz-boya">Beyaz Boya</a></li>
+                                                            <li><a href="/renkler/renklere-gore-duvar-boyalari/kahverengi-boya">Kahverengi Boya</a></li>
+                                                            <li><a href="/renkler/renklere-gore-duvar-boyalari/kirmizi-boya">Kırmızı Boya</a></li>
+                                                            <li><a href="/renkler/renklere-gore-duvar-boyalari/bej-boya">Bej Boya</a></li>
+                                                            <li><a href="/renkler/renklere-gore-duvar-boyalari/mavi-boya">Mavi Boya</a></li>
+                                                            <li><a href="/renkler/renklere-gore-duvar-boyalari/sari-boya">Sarı Boya</a></li>
+                                                            <li><a href="/renkler/renklere-gore-duvar-boyalari/yesil-boya">Yeşil Boya</a></li>
+                                                            <li><a href="/renkler/renklere-gore-duvar-boyalari/turuncu-boya">Turuncu Boya</a></li>
+                                                            <li><a href="/renkler/renklere-gore-duvar-boyalari/mor-boya">Mor Boya</a></li>
+                                                            <li><a href="/renkler/renklere-gore-duvar-boyalari/pembe-boya">Pembe Boya</a></li>
+                                                            <li><a href="/renkler/renklere-gore-duvar-boyalari/gri-boya">Gri Boya</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="has-subnav" data-nav="2">
+                                                        <a href="/renkler/bitise-gore-duvar-boyalari" class="has-subnav-link subnav-header">Bitişe Göre Duvar Boyaları</a>
+                                                        <ul class="subnav">
+                                                            <li><a href="/renkler/bitise-gore-duvar-boyalari/mat-boyalar">Mat Boyalar</a></li>
+                                                            <li><a href="https://www.filliboya.com/renkler/bitise-gore-duvar-boyalari/parlak-boyalar">Parlak Boyalar</a></li>
+                                                            <li><a href="/renkler/bitise-gore-duvar-boyalari/desenli-boyalar">Desenli Boyalar</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="has-subnav" data-nav="3">
+                                                        <a href="/renkler/uygulama-alanina-gore-boyalar" class="has-subnav-link subnav-header">Uygulama Alanına Göre Duvar Boyaları</a>
+                                                        <ul class="subnav">
+                                                            <li><a href="/renkler/ic-cephe-renkleri/mutfak">Mutfak Boyaları</a></li>
+                                                            <li><a href="/renkler/ic-cephe-renkleri/salon">Salon Boyaları</a></li>
+                                                            <li><a href="/renkler/ic-cephe-renkleri/yatak-odasi">Yatak Odası Boyaları</a></li>
+                                                            <li><a href="/renkler/ic-cephe-renkleri/ofis">Çalışma Odası Boyaları</a></li>
+                                                            <li><a href="/renkler/ic-cephe-renkleri/cocuk-odasi">Çocuk Odası Boyaları</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="nav-col" data-col="1">
+                                                        <ul class="nav"></ul>
+                                                    </li>
+                                                    <li class="nav-col" data-col="2">
+                                                        <ul class="nav"></ul>
+                                                    </li>
+                                                    <li class="nav-col" data-col="3">
+                                                        <ul class="nav"></ul>
+                                                    </li>
+                                                    <li class="subnav-promo">
+                                                        <div class="promo-body">
+                                                            <div class='row d-flex'>
+                                                                <div class='col-12 col-sm-5 col-lg-12'>
+                                                                    <img src="/uploads/slider-1.jpg" class='img-fluid'>
+                                                                </div>
+                                                                <div class='col-12 col-sm-5 col-lg-12 my-auto text-center text-sm-start text-lg-center'>
+                                                                    <h4 class="subnav-promo-header">Filli Boya'dan Haki Zamanı</h4>
+                                                                    <p>Filli Boya yepyeni Haki Zamanı renk paletinde yeniden buluşmanın renklere doğal, sıcak ve samimi yansımasını öne çıkarıyor.</p>
+                                                                    <a class="dark-btn px-4" href="/renk/haki">Keşfet</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="has-subnav">
+                                                <a href="/urunler" class="has-subnav-link">Ürünler</a>
+                                                <ul class="main-dropdown subnav">
+                                                    <li class="has-subnav" data-nav="1">
+                                                        <a href="/urunler/boya" class="has-subnav-link subnav-header">Boyalar</a>
+                                                        <ul class="subnav">
+                                                            <li><a href="urunler/boya/ic-cephe-boyalari">İç Cephe Boyaları</a></li>
+                                                            <li><a href="urunler/boya/dis-cephe-boyalari">Dış Cephe Boyaları</a></li>
+                                                            <li><a href="urunler/boya/ahsap-boyalari">Ahşap Boyaları</a></li>
+                                                            <li><a href="urunler/boya/metal-boyalari">Metal Boyaları</a></li>
+                                                            <li><a href="/urunler/boya/tavan-boyalari">Tavan Boyaları</a></li>
+                                                            <li><a href="/urunler/boya/silinebilir-boyalar">Silinebilir Boyalar</a></li>
+                                                            <li><a href="/urunler/boya/sprey-boyalar">Sprey Boyalar</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="has-subnav" data-nav="1"> <a href="/ilham-paketi" class="subnav-header">İlham Paketi</a></li>
+                                                    <li class="has-subnav" data-nav="3">
+                                                        <a href="/urunler/yalitim" class="has-subnav-link subnav-header">Dış Cephe Isı Yalıtımı</a>
+                                                        <ul class="subnav">
+                                                            <li><a href="urunler/yalitim/dalmacyali-isi-yalitim-sistemleri">Dalmaçyalı Isı yalıtım Sistemleri</a></li>
+                                                            <li><a href="urunler/yalitim/expert-isi-yalitim-sistemleri">Expert Isı yalıtım Sistemleri</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="has-subnav" data-nav="2">
+                                                        <a href="urunler/yardimci-urunler" class="has-subnav-link subnav-header">Yardımcı Ürünler</a>
+                                                        <ul class="subnav">
+                                                            <li><a href="urunler/yardimci-urunler/firca-urun-grubu">Boya Fırça ve Ruloları</a></li>
+                                                            <li><a href="urunler/yardimci-urunler/firca-urun-grubu">Fırça Ürün Grubu</a>
+                                                                <li><a href="urunler/yardimci-urunler/rulo-urun-grubu">Rulo Ürün Grubu</a></li>
+                                                                <li><a href="urunler/yardimci-urunler/dolgu-urun-grubu">Dolgu Ürün Grubu</a></li>
+                                                                <li><a href="urunler/yardimci-urunler/boya-yardimci-urunleri">Boya Yardımcı Ürünleri</a></li>
+                                                        </ul>
+                                                        </li>
+                                                        <li class="has-subnav" data-nav="3">
+                                                            <a href="urunler/ev-bakimi-ve-hobi" class="has-subnav-link subnav-header">Ev Bakımı ve Hobi</a>
+                                                            <ul class="subnav">
+                                                                <li><a href="urunler/ev-bakimi-ve-hobi/afilli">Afilli</a></li>
+                                                                <li><a href="urunler/ev-bakimi-ve-hobi/selleys">Selleys</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="nav-col" data-col="1">
+                                                            <ul class="nav"></ul>
+                                                        </li>
+                                                        <li class="nav-col" data-col="2">
+                                                            <ul class="nav"></ul>
+                                                        </li>
+                                                        <li class="nav-col" data-col="3">
+                                                            <ul class="nav"></ul>
+                                                        </li>
+                                                        <li class="subnav-promo">
+                                                            <div class="promo-body">
+                                                                <img src="uploads/menu-afilli.png?v=0.1" alt="" class="promo-img">
+                                                                <h4 class="subnav-promo-header">Bir dokunuşun yeter</h4>
+                                                                <p>İlhamınızı evinize yansıtmanız için bir dokunuş yeter!</p>
+                                                                <a class="dark-btn px-4" href="urunler/ev-bakimi-ve-hobi/afilli">Keşfet</a>
+                                                            </div>
+                                                        </li>
+                                                </ul>
+                                                </li>
+                                                <li class="has-subnav">
+                                                    <a href="/ilham-veren-fikirler" class="has-subnav-link">İlham Veren Fikirler</a>
+                                                    <ul class="main-dropdown subnav">
+                                                        <li class="has-subnav" data-nav="1">
+                                                            <a href="ilham-veren-fikirler/dekorasyon" class="has-subnav-link subnav-header">Dekorasyon</a>
+                                                            <ul class="subnav">
+                                                                <li><a href="/ilham-veren-fikirler/dekorasyon/dekorasyon-trendleri-ve-stilleri">Dekorasyon Trendleri ve Stilleri</a></li>
+                                                                <li><a href="/ilham-veren-fikirler/dekorasyon/odalara-gore-dekorasyon">Odalara Göre Dekorasyon</a></li>
+                                                                <li><a href="/ilham-veren-fikirler/dekorasyon/bitkilerle-dekorasyon">Bitkilerle Dekorasyon</a></li>
+                                                                <li><a href="/ilham-veren-fikirler/dekorasyon/ev-yenileme">Ev Yenileme</a></li>
+                                                                <li><a href="/ilham-veren-fikirler/dekorasyon/kendin-yap">Kendin Yap</a></li>
+                                                                <li><a href="/ilham-veren-fikirler/dekorasyon/dis-mekanlar">Dış Mekanlar</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="has-subnav" data-nav="2">
+                                                            <a href="/ilham-veren-fikirler/evde-yasam" class="has-subnav-link subnav-header">Evde Yaşam</a>
+                                                            <ul class="subnav">
+                                                                <li><a href="/ilham-veren-fikirler/evde-yasam/evde-yemek">Evde Yemek</a></li>
+                                                                <li><a href="/ilham-veren-fikirler/evde-yasam/temizlik">Temizlik</a></li>
+                                                                <li><a href="/ilham-veren-fikirler/evde-yasam/ev-ekonomisi">Ev Ekonomisi</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="has-subnav" data-nav="3">
+                                                            <a href="/ilham-veren-fikirler/bakim-rehberi-filli-boya" class="subnav-header">Bakım Rehberi</a>
+                                                            <a href="/ilham-veren-fikirler/renk-dunyasi" class="subnav-header">Renk Dünyası</a>
+                                                        </li>
+                                                        <li class="nav-col" data-col="1">
+                                                            <ul class="nav"></ul>
+                                                        </li>
+                                                        <li class="nav-col" data-col="2">
+                                                            <ul class="nav"></ul>
+                                                        </li>
+                                                        <li class="nav-col" data-col="3">
+                                                            <ul class="nav"></ul>
+                                                        </li>
+                                                        <li class="subnav-promo">
+                                                            <div class="promo-body">
+                                                                <img src="uploads/menu-blog-1.png">
+                                                                <h4 class="subnav-promo-header">Çocuk Odası Renkleri</h4>
+                                                                <p>Çocuk odaları çocuklarınız için yalnızca dinlenme alanı değil, aynı zamanda oyun ve ders çalışma gibi aktiviteleri aktif olarak gerçekleştirdikleri mekandır...</p>
+                                                                <a class="dark-btn px-4" href="/ilham-veren-fikirler/dekorasyon/dekorasyon-trendleri-ve-stilleri/cocuk-odasi-renkleri">Renkleri İncele</a>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="has-subnav">
+                                                    <a href="profesyonel-urunler" class="has-subnav-link">Profesyonel Ürünler</a>
+                                                    <ul class="main-dropdown subnav">
+                                                        <li class="has-subnav" data-nav="1">
+                                                            <a href="profesyonel-urunler/insaat-boyalari" class="has-subnav-link subnav-header">İnşaat Boyaları</a>
+                                                            <ul class="subnav">
+                                                                <li><a href="profesyonel-urunler/insaat-boyalari/ic-cephe-boyalari">İç Cephe Boyaları</a></li>
+                                                                <li><a href="profesyonel-urunler/insaat-boyalari/dis-cephe-boyalari">Dış Cephe Boyaları</a></li>
+                                                                <li><a href="profesyonel-urunler/insaat-boyalari/sentetik-boyalar">Sentetik Boyalar</a></li>
+                                                                <li><a href="profesyonel-urunler/insaat-boyalari/ahsap-urunleri">Ahşap Ürünleri</a></li>
+                                                                <li><a href="profesyonel-urunler/insaat-boyalari/tutkallar">Tutkallar</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="has-subnav" data-nav="2">
+                                                            <a href="/profesyonel-urunler/expert-urun-grubu" class="has-subnav-link subnav-header">Expert Ürün Grubu</a>
+                                                            <ul class="subnav">
+                                                                <li><a href="/profesyonel-urunler/expert-urun-grubu/expert-ic-cephe-urunleri">Expert İç Cephe Ürünleri</a></li>
+                                                                <li><a href="/profesyonel-urunler/expert-urun-grubu/expert-dis-cephe-urunleri">Expert Dış Cephe Ürünleri</a></li>
+                                                                <li><a href="/profesyonel-urunler/expert-urun-grubu/expert-sentetik-urun-grubu">Expert Sentetik Ürünleri</a></li>
+                                                                <li><a href="/profesyonel-urunler/expert-urun-grubu/expert-isi-yalitim-urunleri">Expert Isı Yalıtım Ürünleri</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="has-subnav" data-nav="2">
+                                                            <a href="/profesyonel-urunler/mobilya-boyalari" class="has-subnav-link subnav-header">Mobilya Boyaları</a>
+                                                            <ul class="subnav">
+                                                                <li><a href="/profesyonel-urunler/mobilya-boyalari/ultra-urun-grubu">ULTRA Ürün Grubu</a></li>
+                                                                <li><a href="/profesyonel-urunler/mobilya-boyalari/super-urun-grubu">SUPER Ürün Grubu</a></li>
+                                                                <li><a href="/profesyonel-urunler/mobilya-boyalari/fine-urun-grubu">FINE Ürün Grubu</a></li>
+                                                                <li><a href="/profesyonel-urunler/mobilya-boyalari/uygulama-videolari">Uygulama Videoları</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="has-subnav" data-nav="2">
+                                                            <a href="/profesyonel-urunler/yapi-kimyasallari" class="has-subnav-link subnav-header">Yapı Kimyasalları</a>
+                                                            <ul class="subnav">
+                                                                <li><a href="/profesyonel-urunler/yapi-kimyasallari/fayans-yapistiricilar">Fayans Yapıştırıcılar</a></li>
+                                                                <li><a href="/profesyonel-urunler/yapi-kimyasallari/derz-dolgular">Derz Dolgular</a></li>
+                                                                <li><a href="/profesyonel-urunler/yapi-kimyasallari/su-yalitim-urunleri">Su Yalıtım Ürünleri</a></li>
+                                                                <li><a href="/profesyonel-urunler/yapi-kimyasallari/hazir-harclar">Hazır Harçlar</a></li>
+                                                                <li><a href="/profesyonel-urunler/yapi-kimyasallari/harc-katkilari">Harç Katkıları</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="has-subnav" data-nav="3">
+                                                            <a href="/profesyonel-urunler/sanayi-boyalari" class="has-subnav-link subnav-header">Sanayi Boyaları</a>
+                                                            <ul class="subnav">
+                                                                <li><a href="/profesyonel-urunler/sanayi-boyalari/akrilik-sistemler">Akrilik Sistemler</a></li>
+                                                                <li><a href="/profesyonel-urunler/sanayi-boyalari/epoksi-sistemler">Epoksi Sistemler</a></li>
+                                                                <li><a href="/profesyonel-urunler/sanayi-boyalari/poliuretan-sistemler">Poliüretan Sistemler</a></li>
+                                                                <li><a href="/profesyonel-urunler/sanayi-boyalari/selulozik-sistemler">Selülozik Sistemler</a></li>
+                                                                <li><a href="/profesyonel-urunler/sanayi-boyalari/alkid-sistemler">Alkid Sistemler</a></li>
+                                                                <li><a href="/profesyonel-urunler/sanayi-boyalari/sentetik-sistemler">Sentetik Sistemler</a></li>
+                                                                <li><a href="/profesyonel-urunler/sanayi-boyalari/termoset-sistemler">Termoset Sistemler</a></li>
+                                                                <li><a href="/profesyonel-urunler/sanayi-boyalari/polyester-sistemler">Polyester Sistemler</a></li>
+                                                                <li><a href="/profesyonel-urunler/sanayi-boyalari/isiya-dayanikli-sistemler">Isısya Dayanıklı Sistemler</a></li>
+                                                                <li><a href="/profesyonel-urunler/sanayi-boyalari/zemin-kaplamalari">Zemin Kaplamaları</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="has-subnav" data-nav="3">
+                                                            <a href="profesyonel-urunler/yardimci-urunler" class="has-subnav-link subnav-header">Yardımcı Ürünler</a>
+                                                            <ul class="subnav">
+                                                                <li><a href="/profesyonel-urunler/yardimci-urunler/firca-urun-grubu">Fırça Ürün Grubu</a></li>
+                                                                <li><a href="/profesyonel-urunler/yardimci-urunler/rulo-urun-grubu">Rulo Ürün Grubu</a></li>
+                                                                <li><a href="/profesyonel-urunler/yardimci-urunler/dolgu-urun-grubu">Dolgu Ürün Grubu</a></li>
+                                                                <li><a href="/profesyonel-urunler/yardimci-urunler/boya-yardimci-urunleri">Boya Yardımcı Ürünleri</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="nav-col" data-col="1">
+                                                            <ul class="nav"></ul>
+                                                        </li>
+                                                        <li class="nav-col" data-col="2">
+                                                            <ul class="nav"></ul>
+                                                        </li>
+                                                        <li class="nav-col" data-col="3">
+                                                            <ul class="nav"></ul>
+                                                        </li>
+                                                        <li class="subnav-promo">
+                                                            <div class="promo-body">
+                                                                <img src="uploads/menu-momento-silan.png">
+                                                                <h4 class="subnav-promo-header">Momento Silan</h4>
+                                                                <p>Filli Boya’nın yenilikçi Aktif Silikon Teknolojisi ile geliştirilmiş tam silinebilir ve yıkanabilir özellikte, iç mekanlara ferahlık katan ipeksi mat® dokudaki renkleri ile dekoratif su bazlı
+                                                                    VOC uyumlu silikonlu son kat iç cephe boyasıdır.</p>
+                                                                <a class="dark-btn px-4" href="/urun/momento-silan_100ML">Ürünü İncele</a>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="has-subnav">
+                                                    <a href="hizmetler" class="has-subnav-link">Hizmetler</a>
+                                                    <ul class="main-dropdown subnav">
+                                                        <li class="has-subnav" data-nav="1">
+                                                            <a href="https://filliustam.com" target="_BLANK" class="subnav-header">Filli Ustam</a>
+                                                        </li>
+                                                        <li class="has-subnav" data-nav="2">
+                                                            <a href="/hizmetler/renk-danisma" class="subnav-header border-none">Renk Danışma</a>
+                                                        </li>
+                                                        <li class="nav-col" data-col="1">
+                                                            <ul class="nav"></ul>
+                                                        </li>
+                                                        <li class="nav-col" data-col="2">
+                                                            <ul class="nav"></ul>
+                                                        </li>
+                                                        <li class="nav-col" data-col="3">
+                                                            <ul class="nav"></ul>
+                                                        </li>
+                                                        <li class="subnav-promo">
+                                                            <div class="promo-body">
+                                                                <img src="uploads/menu-filliustam.png">
+                                                                <h4 class="subnav-promo-header">Filli Ustam ile Garanti</h4>
+                                                                <p>Filli Ustam'ın Boyacılarından Garantili Hizmet Alın!</p>
+                                                                <a class="dark-btn px-4" href="https://filliustam.com" target="_BLANK">Usta Bul</a>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+
+                                                <li class="has-subnav">
+                                                    <a href="/yardim" class="has-subnav-link">Yardım</a>
+                                                    <ul class="main-dropdown subnav">
+                                                        <li class="has-subnav" data-nav="1">
+                                                            <a href="/yardim/islem-rehberi" target="_SELF" class="subnav-header">İşlem Rehberi</a>
+                                                        </li>
+                                                        <li class="has-subnav" data-nav="2">
+                                                            <a href="/yardim/sss" target="_SELF" class="subnav-header">SSS</a>
+                                                        </li>
+                                                        <li class="has-subnav" data-nav="3">
+                                                            <a href="#" class="subnav-header border-none open-chat">Canlı Chat</a>
+                                                        </li>
+                                                        <li class="nav-col" data-col="1">
+                                                            <ul class="nav"></ul>
+                                                        </li>
+                                                        <li class="nav-col" data-col="2">
+                                                            <ul class="nav"></ul>
+                                                        </li>
+                                                        <li class="nav-col" data-col="3">
+                                                            <ul class="nav"></ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+
+                                        </ul>
+                                    </nav>
+                                    <div class="d-none d-xl-none p-0">
+                                        <div class="row pt-3 border-top">
+                                            <div class='col-12'>
+                                                <a href='hesabim' class="d-flex align-items-center py-1 mt-2 text-decoration-none">
+                                                    <i class="fal fa-user text-black fs-20 me-4"></i>
+                                                    <span class="fs-14 mobil-menu-color text-decoration-none">Hesabım</span>
+                                                </a>
+                                                <a href='cikis' class="d-flex align-items-center py-1 mt-2 mb-3 text-decoration-none pb-4 border-bottom">
+                                                    <i class="fal fa-sign-out text-black fs-20 me-4"></i>
+                                                    <span class="fs-14 mobil-menu-color text-decoration-none">Çıkış Yap</span>
+                                                </a>
+                                                <a href='/iletisim/satis-noktalari' class="d-flex align-items-center py-1 mt-3 text-decoration-none">
+                                                    <i class="fal fa-map-marker-alt text-black fs-20 me-4 ms-1"></i>
+                                                    <span class="fs-14 mobil-menu-color text-decoration-none">En Yakın Filli Boya Bayisi</span>
+                                                </a>
+                                                <a href='favori-listelerim' class="d-flex align-items-center py-1 mt-2 text-decoration-none">
+                                                    <i class="fal fa-heart text-black fs-20 me-4"></i>
+                                                    <span class="fs-14 mobil-menu-color text-decoration-none">Favorilerim</span>
+                                                </a>
+                                                <a href='siparisler' class="d-flex align-items-center py-1 mt-2 text-decoration-none">
+                                                    <i class="fal fa-truck text-black fs-20 me-3"></i>
+                                                    <span class="fs-14 mobil-menu-color text-decoration-none ps-1">Sipariş Takibi</span>
+                                                </a>
+                                                <a href='/iletisim/iletisim-formu' class="d-flex align-items-center py-1 mt-2 text-decoration-none">
+                                                    <i class="fal fa-headset text-black fs-20 me-4"></i>
+                                                    <span class="fs-14 mobil-menu-color text-decoration-none">Müşteri Hizmetleri</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='main-back-wrapper'></div>
+    <div class='side-bar'>
+        <div class='bar-cart-list'>
+            <center class='py-5'>Sepetiniz henüz boş</center>
+        </div>
+        <div class='px-2 px-md-4'>
+            <a class="text-center mx-auto dark-btn b-rad-50p py-2 px-5 w-100 text-decoration-none d-inline-block" href="/sepetim">
+Alışverişi Tamamla
+</a>
+            <a class="text-center mx-auto mt-3 dark-btn b-rad-50p py-2 px-5 w-100 text-decoration-none d-inline-block cursor-pointer continue-shopping">
+Alışverişe Devam Et
+</a>
+        </div>
+    </div>
+    <style>
+        .colors-circle-btn {
+            width: 40px;
+            height: 40px
+        }
+    </style>
+    <div class='container'>
+        <div class="row">
+            <div class="col py-4">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="">Ana Sayfa</a></li>
+                        <li class="breadcrumb-item "><a href="/renkler">Renkler</a></li>
+                        <li class="breadcrumb-item "><a href="/renkler/renklere-gore-duvar-boyalari">Renklere Göre Duvar Boyaları</a></li>
+                        <li class="breadcrumb-item active"><a>Beyaz Boya</a></li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class='col-12 col-md-4 pb-5'>
+                <div class='d-block d-sm-none'>
+                    <div class='btn btn-secondary filter-switch d-flex'>Filtrele & Sırala <i class="ms-auto fs-24 fas fa-caret-down"></i></div>
+                </div>
+                <div class='filters d-none d-sm-block pt-4 pt-sm-0'>
+                    <strong>Sıralama</strong>
+                    <hr />
+                    <select class='form-select mb-5 order-list' data-id="[id]">
+<option value='default'>Önerilen Sıralama</option>
+<option value='price-asc'>Fiyata Göre - Artan</option>
+<option value='price-desc'>Fiyata Göre - Azalan</option>
+<option value='newest'>En Yeniler</option>
+<option value='sale-desc'>En Çok Satanlar</option>
+</select>
+                    <strong>Miktar</strong>
+                    <hr />
+                    <ul class='d-block mb-5'>
+                        <li class='d-flex mb-2'><input type='checkbox' class='pack-check form-check-input me-3' name='pack_check' value='1LT' id='pack-1LT' data-id='1LT'><label for='pack-1LT'>1LT</label></li>
+                        <li class='d-flex mb-2'><input type='checkbox' class='pack-check form-check-input me-3' name='pack_check' value='1.25LT' id='pack-1.25LT' data-id='1.25LT'><label for='pack-1.25LT'>1.25LT</label></li>
+                        <li class='d-flex mb-2'><input type='checkbox' class='pack-check form-check-input me-3' name='pack_check' value='2.5LT' id='pack-2.5LT' data-id='2.5LT'><label for='pack-2.5LT'>2.5LT</label></li>
+                        <li class='d-flex mb-2'><input type='checkbox' class='pack-check form-check-input me-3' name='pack_check' value='7.5LT' id='pack-7.5LT' data-id='7.5LT'><label for='pack-7.5LT'>7.5LT</label></li>
+                        <li class='d-flex mb-2'><input type='checkbox' class='pack-check form-check-input me-3' name='pack_check' value='15LT' id='pack-15LT' data-id='15LT'><label for='pack-15LT'>15LT</label></li>
+                        <li class='d-flex mb-2'><input type='checkbox' class='pack-check form-check-input me-3' name='pack_check' value='100ML' id='pack-100ML' data-id='100ML'><label for='pack-100ML'>100ML</label></li>
+                        <li class='d-flex mb-2'><input type='checkbox' class='pack-check form-check-input me-3' name='pack_check' value='120ML' id='pack-120ML' data-id='120ML'><label for='pack-120ML'>120ML</label></li>
+                        <li class='d-flex mb-2'><input type='checkbox' class='pack-check form-check-input me-3' name='pack_check' value='250ML' id='pack-250ML' data-id='250ML'><label for='pack-250ML'>250ML</label></li>
+                        <li class='d-flex mb-2'><input type='checkbox' class='pack-check form-check-input me-3' name='pack_check' value='500ML' id='pack-500ML' data-id='500ML'><label for='pack-500ML'>500ML</label></li>
+                    </ul>
+                    <strong>Fiyat Aralığı</strong>
+                    <hr />
+                    <ul class='d-block mb-5'>
+                        <li class='d-flex mb-2'><input type='checkbox' class='price-check form-check-input me-3' name='price_check' value='1' id='price-1'><label for='price-1'>0TL - 125TL</label></li>
+                        <li class='d-flex mb-2'><input type='checkbox' class='price-check form-check-input me-3' name='price_check' value='2' id='price-2'><label for='price-1'>125TL - 300TL</label></li>
+                        <li class='d-flex mb-2'><input type='checkbox' class='price-check form-check-input me-3' name='price_check' value='3' id='price-3'><label for='price-1'>300TL - 500TL</label></li>
+                        <li class='d-flex mb-2'><input type='checkbox' class='price-check form-check-input me-3' name='price_check' value='4' id='price-4'><label for='price-1'>500TL - 900TL</label></li>
+                        <li class='d-flex mb-2'><input type='checkbox' class='price-check form-check-input me-3' name='price_check' value='5' id='price-5'><label for='price-1'>900TL - 1500TL</label></li>
+                        <li class='d-flex mb-2'><input type='checkbox' class='price-check form-check-input me-3' name='price_check' value='6' id='price-6'><label for='price-1'>1500TL - 3000TL</label></li>
+                    </ul>
+                    <strong>Kategoriler</strong>
+                    <hr />
+                    <ul class='d-block mb-5'>
+                        <li class='d-flex mb-2'><input type='checkbox' class='cat-check form-check-input me-3' id='ic-cephe-boyalari' data-id='ic-cephe-boyalari'><label for='ic-cephe-boyalari'>İç Cephe Boyaları</label></li>
+                        <li class='d-flex mb-2'><input type='checkbox' class='cat-check form-check-input me-3' id='dis-cephe-boyalari' data-id='dis-cephe-boyalari'><label for='dis-cephe-boyalari'>Dış Cephe Boyaları</label></li>
+                        <li class='d-flex mb-2'><input type='checkbox' class='cat-check form-check-input me-3' id='sentetik-boyalar' data-id='sentetik-boyalar'><label for='sentetik-boyalar'>Sentetik Boyalar</label></li>
+                        <li class='d-flex mb-2'><input type='checkbox' class='cat-check form-check-input me-3' id='ahsap-boyalari' data-id='ahsap-boyalari'><label for='ahsap-boyalari'>Ahşap Boyaları</label></li>
+                        <li class='d-flex mb-2'><input type='checkbox' class='cat-check form-check-input me-3' id='metal-boyalari' data-id='metal-boyalari'><label for='metal-boyalari'>Metal Boyaları</label></li>
+                        <li class='d-flex mb-2'><input type='checkbox' class='cat-check form-check-input me-3' id='tavan-boyalari' data-id='tavan-boyalari'><label for='tavan-boyalari'>Tavan Boyaları</label></li>
+                        <li class='d-flex mb-2'><input type='checkbox' class='cat-check form-check-input me-3' id='silinebilir-boyalar' data-id='silinebilir-boyalar'><label for='silinebilir-boyalar'>Silinebilir Boyalar</label></li>
+                        <li class='d-flex mb-2'><input type='checkbox' class='cat-check form-check-input me-3' id='silikon-boyalar' data-id='silikon-boyalar'><label for='silikon-boyalar'>Silikon Boyalar</label></li>
+                        <li class='d-flex mb-2'><input type='checkbox' class='cat-check form-check-input me-3' id='sprey-boyalar' data-id='sprey-boyalar'><label for='sprey-boyalar'>Sprey Boyalar</label></li>
+                    </ul>
+                    <strong>Renkler</strong>
+                    <hr />
+                    <div class='color-title mb-2'>
+                        &nbsp;
+                    </div>
+                    <div style='max-height:220px;overflow:auto'>
+                        <a class="button d-flex float-start mb-3 mx-1 align-items-center justify-content-center colors-circle-btn b-rad-50p text-black text-decoration-none" data-cat='dis-cephe-boyalari' data-title='39S5' style="background-color:rgb(243,240,231)">
+                            <p class="pt-2 fw-bold text-center" style="position:relative; top:4rem; font-size:10px!important; font-weight: 500!important">
+                            </p>
+                        </a>
+                        <a class="button d-flex float-start mb-3 mx-1 align-items-center justify-content-center colors-circle-btn b-rad-50p text-black text-decoration-none" data-cat='ic-cephe-boyalari' data-title='İPEKSİ 10' style="background-color:rgb(244,247,248)">
+                            <p class="pt-2 fw-bold text-center" style="position:relative; top:4rem; font-size:10px!important; font-weight: 500!important">
+                            </p>
+                        </a>
+                        <a class="button d-flex float-start mb-3 mx-1 align-items-center justify-content-center colors-circle-btn b-rad-50p text-black text-decoration-none" data-cat='dis-cephe-boyalari' data-title='40S5' style="background-color:rgb(245,240,229)">
+                            <p class="pt-2 fw-bold text-center" style="position:relative; top:4rem; font-size:10px!important; font-weight: 500!important">
+                            </p>
+                        </a>
+                        <a class="button d-flex float-start mb-3 mx-1 align-items-center justify-content-center colors-circle-btn b-rad-50p text-black text-decoration-none" data-cat='ic-cephe-boyalari' data-title='iPEKSİ 15' style="background-color:rgb(249,249,246)">
+                            <p class="pt-2 fw-bold text-center" style="position:relative; top:4rem; font-size:10px!important; font-weight: 500!important">
+                            </p>
+                        </a>
+                        <a class="button d-flex float-start mb-3 mx-1 align-items-center justify-content-center colors-circle-btn b-rad-50p text-black text-decoration-none" data-cat='dis-cephe-boyalari' data-title='38S4' style="background-color:rgb(214,214,210)">
+                            <p class="pt-2 fw-bold text-center" style="position:relative; top:4rem; font-size:10px!important; font-weight: 500!important">
+                            </p>
+                        </a>
+                        <a class="button d-flex float-start mb-3 mx-1 align-items-center justify-content-center colors-circle-btn b-rad-50p text-black text-decoration-none" data-cat='ic-cephe-boyalari' data-title='İPEKSİ 20' style="background-color:rgb(246,247,242)">
+                            <p class="pt-2 fw-bold text-center" style="position:relative; top:4rem; font-size:10px!important; font-weight: 500!important">
+                            </p>
+                        </a>
+                        <a class="button d-flex float-start mb-3 mx-1 align-items-center justify-content-center colors-circle-btn b-rad-50p text-black text-decoration-none" data-cat='dis-cephe-boyalari' data-title='38S5' style="background-color:rgb(234,231,220)">
+                            <p class="pt-2 fw-bold text-center" style="position:relative; top:4rem; font-size:10px!important; font-weight: 500!important">
+                            </p>
+                        </a>
+                        <a class="button d-flex float-start mb-3 mx-1 align-items-center justify-content-center colors-circle-btn b-rad-50p text-black text-decoration-none" data-cat='ic-cephe-boyalari' data-title='İPEKSİ 25' style="background-color:rgb(247,247,242)">
+                            <p class="pt-2 fw-bold text-center" style="position:relative; top:4rem; font-size:10px!important; font-weight: 500!important">
+                            </p>
+                        </a>
+                        <a class="button d-flex float-start mb-3 mx-1 align-items-center justify-content-center colors-circle-btn b-rad-50p text-black text-decoration-none" data-cat='ic-cephe-boyalari' data-title='İPEKSİ 30' style="background-color:rgb(248,249,245)">
+                            <p class="pt-2 fw-bold text-center" style="position:relative; top:4rem; font-size:10px!important; font-weight: 500!important">
+                            </p>
+                        </a>
+                        <a class="button d-flex float-start mb-3 mx-1 align-items-center justify-content-center colors-circle-btn b-rad-50p text-black text-decoration-none" data-cat='ic-cephe-boyalari' data-title='İPEKSİ 35' style="background-color:rgb(236,240,241)">
+                            <p class="pt-2 fw-bold text-center" style="position:relative; top:4rem; font-size:10px!important; font-weight: 500!important">
+                            </p>
+                        </a>
+                        <a class="button d-flex float-start mb-3 mx-1 align-items-center justify-content-center colors-circle-btn b-rad-50p text-black text-decoration-none" data-cat='ic-cephe-boyalari' data-title='İPEKSİ 40' style="background-color:rgb(241,245,244)">
+                            <p class="pt-2 fw-bold text-center" style="position:relative; top:4rem; font-size:10px!important; font-weight: 500!important">
+                            </p>
+                        </a>
+                        <a class="button d-flex float-start mb-3 mx-1 align-items-center justify-content-center colors-circle-btn b-rad-50p text-black text-decoration-none" data-cat='ic-cephe-boyalari' data-title='İPEKSİ 45' style="background-color:rgb(246,247,240)">
+                            <p class="pt-2 fw-bold text-center" style="position:relative; top:4rem; font-size:10px!important; font-weight: 500!important">
+                            </p>
+                        </a>
+                        <a class="button d-flex float-start mb-3 mx-1 align-items-center justify-content-center colors-circle-btn b-rad-50p text-black text-decoration-none" data-cat='ic-cephe-boyalari' data-title='İPEKSİ 50' style="background-color:rgb(246,245,239)">
+                            <p class="pt-2 fw-bold text-center" style="position:relative; top:4rem; font-size:10px!important; font-weight: 500!important">
+                            </p>
+                        </a>
+                        <a class="button d-flex float-start mb-3 mx-1 align-items-center justify-content-center colors-circle-btn b-rad-50p text-black text-decoration-none" data-cat='ic-cephe-boyalari' data-title='İPEKSİ 55' style="background-color:rgb(236,235,226)">
+                            <p class="pt-2 fw-bold text-center" style="position:relative; top:4rem; font-size:10px!important; font-weight: 500!important">
+                            </p>
+                        </a>
+                        <a class="button d-flex float-start mb-3 mx-1 align-items-center justify-content-center colors-circle-btn b-rad-50p text-black text-decoration-none" data-cat='ic-cephe-boyalari' data-title='İPEKSİ 60' style="background-color:rgb(247,248,243)">
+                            <p class="pt-2 fw-bold text-center" style="position:relative; top:4rem; font-size:10px!important; font-weight: 500!important">
+                            </p>
+                        </a>
+
+                        <a class="button d-flex float-start mb-3 mx-1 align-items-center justify-content-center colors-circle-btn b-rad-50p text-black text-decoration-none" data-cat='ic-cephe-boyalari' data-title='İPEKSİ 65' style="background-color:rgb(245,244,238)">
+                            <p class="pt-2 fw-bold text-center" style="position:relative; top:4rem; font-size:10px!important; font-weight: 500!important">
+                            </p>
+                        </a>
+                        <a class="button d-flex float-start mb-3 mx-1 align-items-center justify-content-center colors-circle-btn b-rad-50p text-black text-decoration-none" data-cat='ic-cephe-boyalari' data-title='İPEKSİ 70' style="background-color:rgb(240,237,233)">
+                            <p class="pt-2 fw-bold text-center" style="position:relative; top:4rem; font-size:10px!important; font-weight: 500!important">
+                            </p>
+                        </a>
+                        <a class="button d-flex float-start mb-3 mx-1 align-items-center justify-content-center colors-circle-btn b-rad-50p text-black text-decoration-none" data-cat='ic-cephe-boyalari' data-title='İPEKSİ 75' style="background-color:rgb(242,242,238)">
+                            <p class="pt-2 fw-bold text-center" style="position:relative; top:4rem; font-size:10px!important; font-weight: 500!important">
+                            </p>
+                        </a>
+                        <a class="button d-flex float-start mb-3 mx-1 align-items-center justify-content-center colors-circle-btn b-rad-50p text-black text-decoration-none" data-cat='ic-cephe-boyalari' data-title='İPEKSİ 80' style="background-color:rgb(234,238,239)">
+                            <p class="pt-2 fw-bold text-center" style="position:relative; top:4rem; font-size:10px!important; font-weight: 500!important">
+                            </p>
+                        </a>
+                        <a class="button d-flex float-start mb-3 mx-1 align-items-center justify-content-center colors-circle-btn b-rad-50p text-black text-decoration-none" data-cat='ic-cephe-boyalari' data-title='AYDAN' style="background-color:rgb(248,247,246)">
+                            <p class="pt-2 fw-bold text-center" style="position:relative; top:4rem; font-size:10px!important; font-weight: 500!important">
+                            </p>
+                        </a>
+                        <a class="button d-flex float-start mb-3 mx-1 align-items-center justify-content-center colors-circle-btn b-rad-50p text-black text-decoration-none" data-cat='ic-cephe-boyalari' data-title='KUM BEYAZI' style="background-color:rgb(238,237,235)">
+                            <p class="pt-2 fw-bold text-center" style="position:relative; top:4rem; font-size:10px!important; font-weight: 500!important">
+                            </p>
+                        </a>
+                        <a class="button d-flex float-start mb-3 mx-1 align-items-center justify-content-center colors-circle-btn b-rad-50p text-black text-decoration-none" data-cat='ic-cephe-boyalari' data-title='KIRIK BEYAZ' style="background-color:rgb(251,250,245)">
+                            <p class="pt-2 fw-bold text-center" style="position:relative; top:4rem; font-size:10px!important; font-weight: 500!important">
+                            </p>
+                        </a>
+                        <a class="button d-flex float-start mb-3 mx-1 align-items-center justify-content-center colors-circle-btn b-rad-50p text-black text-decoration-none" data-cat='ic-cephe-boyalari' data-title='LÜLETAŞI' style="background-color:rgb(240,236,231)">
+                            <p class="pt-2 fw-bold text-center" style="position:relative; top:4rem; font-size:10px!important; font-weight: 500!important">
+                            </p>
+                        </a>
+                        <a class="button d-flex float-start mb-3 mx-1 align-items-center justify-content-center colors-circle-btn b-rad-50p text-black text-decoration-none" data-cat='ic-cephe-boyalari' data-title='KARBEYAZ' style="background-color:rgb(235,234,229)">
+                            <p class="pt-2 fw-bold text-center" style="position:relative; top:4rem; font-size:10px!important; font-weight: 500!important">
+                            </p>
+                        </a>
+                        <a class="button d-flex float-start mb-3 mx-1 align-items-center justify-content-center colors-circle-btn b-rad-50p text-black text-decoration-none" data-cat='ic-cephe-boyalari' data-title='AKİ' style="background-color:rgb(239,238,230)">
+                            <p class="pt-2 fw-bold text-center" style="position:relative; top:4rem; font-size:10px!important; font-weight: 500!important">
+                            </p>
+                        </a>
+                        <a class="button d-flex float-start mb-3 mx-1 align-items-center justify-content-center colors-circle-btn b-rad-50p text-black text-decoration-none" data-cat='ic-cephe-boyalari' data-title='KAYISI BEYAZI' style="background-color:rgb(247,237,228)">
+                            <p class="pt-2 fw-bold text-center" style="position:relative; top:4rem; font-size:10px!important; font-weight: 500!important">
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class='col-12 col-md-8'>
+                <div class='row result-list pb-5'>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='sample-prd d-none'>
+        <div class="col-6 col-lg-4 col-xl-4 col-md-6 mb-4 prd-wrapper" data-color='{color}' data-cat='{category}'>
+            <div class="pb-2 product-list-box d-block text-decoration-none text-dark" href='{link_cat}/{alias}{package}#{color}' data-id='{id}'>
+                <div class="text-center pt-1 pb-3">
+                    <a class='rounded m-2 d-block' style='background-color:{rgb}' href='urun/{alias}{package}#{color}' data-id='{id}'>
+                        <img src="cms/phpThumb.php?src={image}&w=600&h=600&f=png&zc=T" class="img-fluid w-75" alt="{title} - {color}">
+                    </a>
+                </div>
+                <a class="transparent-bg px-1 px-md-3 xs-fs-16 fs-20 py-0 h4 text-decoration-none text-dark" href='urun/{alias}{package}#{color}' data-id='{id}'>
+{title} - {color}
+</a>
+                <h3 class="m-0 py-2 px-3 xs-fs-14 fs-20">
+                    <span>{price}</span>TL {old_price} <span class='fs-12 pack_text'> {slash} {package_text}</span> &nbsp;
+                </h3>
+                <div class="text-center dark-btn b-rad-50p ms-1 ms-md-3 my-2 py-2 px-5 xs-fs-11 text-decoration-none d-inline-block cursor-pointer {buy_class}" data-id='{id}'>
+                    {buy_text}
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center text-lg-start bg-footer text-white d-none d-md-block d-lg-block d-xl-block">
+        <section class="pt-3">
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3 border-bottom text-start">
+                    <div class="col-6 col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h5 class="fs-16">
+                            Popüler Kategoriler
+                        </h5>
+                        <ul class="fs-14">
+                            <li>
+                                <a href='/urunler/boya/ic-cephe-boyalari' class="text-white text-decoration-none">
+İç Cephe Boyaları
+</a>
+                            </li>
+                            <li>
+                                <a href='/urunler/boya/dis-cephe-boyalari' class="text-white text-decoration-none">
+Dış Cephe Boyaları
+</a>
+                            </li>
+                            <li>
+                                <a href='/renkler/ic-cephe-renkleri' class="text-white text-decoration-none">
+İç Cephe Renkleri
+</a>
+                            </li>
+                            <li>
+                                <a href='/renkler/dis-cephe-renkleri' class="text-white text-decoration-none">
+Dış Cephe Renkleri
+</a>
+                            </li>
+                            <li>
+                                <a href='/profesyonel-urunler/mobilya-boyalari' class="text-white text-decoration-none">
+Mobilya Boyaları
+</a>
+                            </li>
+                            <li>
+                                <a href='/urunler/boya/ic-cephe-boyalari/ic-cephe-macun-ve-astarlar' class="text-white text-decoration-none">
+Macun ve Astarlar
+</a>
+                            </li>
+                            <li>
+                                <a href='/profesyonel-urunler/yapi-kimyasallari' class="text-white text-decoration-none">
+Yapı Kimyasalları
+</a>
+                            </li>
+                            <li>
+                                <a href='/urunler/boya/ic-cephe-boyalari/ic-cephe-tavan-boyalari' class="text-white text-decoration-none">
+Tavan Boyaları
+</a>
+                            </li>
+                            <li>
+                                <a href='/urunler/ev-bakimi-ve-hobi' class="text-white text-decoration-none">
+Ev Bakım ve Hobi Boyaları
+</a>
+                            </li>
+                            <li>
+                                <a href='renkler/ic-cephe-renkleri/yatak-odasi' class="text-white text-decoration-none">
+Yatak Odası Renkleri
+</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h5 class="fs-16">Popüler Ürünler</h5>
+                        <ul class="fs-14">
+                            <li>
+                                <a href='/urun/momento-silan_1.25LT' class="text-white text-decoration-none">
+Momento Silan
+</a>
+                            </li>
+                            <li>
+                                <a href='/urun/momento-max_1.25LT' class="text-white text-decoration-none">Momento Max</a>
+                            </li>
+                            <li>
+                                <a href="/urun/filli-boya-yagli-boya-parlak" class="text-white text-decoration-none">Filli Boya Yağlı Boya</a>
+                            </li>
+                            <li>
+                                <a href="/urun/panel-kapi-boyasi" class="text-white text-decoration-none">Panel Kapı Boyası</a>
+                            </li>
+                            <li>
+                                <a href="/urun/aqualux_2.5LT" class="text-white text-decoration-none">Aqualux</a>
+                            </li>
+                            <li>
+                                <a href="/urun/momento-max-cleanix" class="text-white text-decoration-none">Momento Max Cleanix</a>
+                            </li>
+                            <li>
+                                <a href="/urun/momento-tek_2.5LT" class="text-white text-decoration-none">Momento Tek</a>
+                            </li>
+                            <li>
+                                <a href="/urun/sentomaxx-mat-sentetik-boya" class="text-white text-decoration-none">Sentomaxx Sentetik Boya</a>
+                            </li>
+                            <li>
+                                <a href="/urun/sentomaxx-ipeksi-mat-sentetik-boya" class="text-white text-decoration-none">Sentomaxx İpeksi Mat</a>
+                            </li>
+                            <li>
+                                <a href="/urun/momento-life" class="text-white text-decoration-none">Momento Life</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h5 class="fs-16">Popüler Renkler</h5>
+                        <ul class="fs-14">
+                            <li>
+                                <a href='/renk/kirik-beyaz' class="text-white text-decoration-none">
+Kırık Beyaz Rengi
+</a>
+                            </li>
+                            <li>
+                                <a href='/renk/cakilli-kum' class="text-white text-decoration-none">
+Çakıllı Kum Rengi
+</a>
+                            </li>
+                            <li>
+                                <a href='/renk/aydan' class='text-white text-decoration-none cursor-pointer'>Aydan Rengi</a>
+                            </li>
+                            <li>
+                                <a href='/renk/fildisi' class='text-white text-decoration-none cursor-pointer'>Fildişi Rengi</a>
+                            </li>
+                            <li>
+                                <a href='/renk/andezit-60' class='text-white text-decoration-none cursor-pointer'>Andezit Rengi</a>
+                            </li>
+                            <li>
+                                <a href='/renk/sampanya' class='text-white text-decoration-none cursor-pointer'>Şampanya Rengi</a>
+                            </li>
+                            <li>
+                                <a href='/renk/haki' class='text-white text-decoration-none cursor-pointer'>Haki Rengi</a>
+                            </li>
+                            <li>
+                                <a href='/renk/acik-mavi' class='text-white text-decoration-none cursor-pointer'>Açık Mavi Rengi</a>
+                            </li>
+                            <li>
+                                <a href='/renk/bej-15' class='text-white text-decoration-none cursor-pointer'>Bej Rengi</a>
+                            </li>
+                            <li>
+                                <a href='/renk/frezya' class='text-white text-decoration-none cursor-pointer'>Frezya Rengi</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h5 class="fs-16">Kurumsal </h5>
+                        <ul class="fs-14">
+                            <li>
+                                <a href='/hakkimizda' class="text-white text-decoration-none">
+Hakkımızda
+</a>
+                            </li>
+                            <li>
+                                <a href='/hakkimizda/kurumsal-sosyal-sorumluluk' class="text-white text-decoration-none">Kurumsal Sosyal Sorumluluk</a>
+                            </li>
+                            <li>
+                                <a href='/hakkimizda/basin-odasi' class="text-white text-decoration-none">Basın Odası</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h5 class="fs-16">Müşteri Hizmetleri</h5>
+                        <ul class="fs-14">
+                            <li>
+                                <a href='/iletisim/iletisim-formu' class="text-white text-decoration-none">
+İletişim Formu
+</a>
+                            </li>
+                            <li>
+                                <a href='/iletisim/satis-noktalari' class="text-white text-decoration-none">
+Satış Noktaları
+</a>
+                            </li>
+                            <li>
+                                <a href='/hizmetler/renk-danisma' class="text-white text-decoration-none">
+Renk Danışma
+</a>
+                            </li>
+                            <li>
+                                <a href='https://filliustam.com/' class="text-white text-decoration-none">
+Filli Ustam
+</a>
+                            </li>
+                            <li>
+                                <a href='/yardim/sss' class="text-white text-decoration-none">
+Sıkça Sorulan Sorular
+</a>
+                            </li>
+                            <li>
+                                <a href='https://www.dalmacyali.com.tr/hizmetlerimiz/ucretsiz-kesif' class="text-white text-decoration-none">
+Ücretsiz Yalıtım Keşif Hizmeti
+</a>
+                            </li>
+                            <li>
+                                <a href='/yardim/islem-rehberi' class="text-white text-decoration-none">
+İşlem Rehberi
+</a>
+                            </li>
+                            <li>
+                                <a href='https://e-sirket.mkk.com.tr/esir/Dashboard.jsp#/sirketbilgileri/10852' class="text-white text-decoration-none">
+Bilgi Toplumu Hizmetleri
+</a>
+                            </li>
+                            <li>
+                                <a href='/kullanim-kosullari' class="text-white text-decoration-none">
+İnternet Sitesi Kullanım Koşulları
+</a>
+                            </li>
+                            <li>
+                                <a href='/uploads/kvkk-talep-formu.pdf' class="text-white text-decoration-none">
+KVKK Talep Formu
+</a>
+                            </li>
+                            <li>
+                                <a href='/kvkk-aydinlatma-metni' class="text-white text-decoration-none">
+KVKK Aydınlatma Metni
+</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row mt-3 border-bottom">
+                    <div class="col-12 col-md-4 col-lg-4 col-xl-4 text-start mb-2">
+                        <img src="./uploads/filli-logo.png" class="w-20">
+                        <p class="mt-1 pt-3 text-white">
+                            <a href='https://www.facebook.com/filliboya/' class='text-white' target='_BLANK'><i class="fab fs-18 pe-3 fa-facebook-f"></i></a>
+                            <a href='http://www.twitter.com/filliboya' class='text-white' target='_BLANK'><i class="fab fs-18 pe-3 fa-twitter"></i></a>
+                            <a href='https://www.linkedin.com/company/betek-boya-ve-kimya-sanayi-a-' class='text-white' target='_BLANK'><i class="fab fs-18 pe-3 fa-linkedin-in"></i></a>
+                            <a href='http://instagram.com/filliboya' class='text-white' target='_BLANK'><i class="fab fs-18 pe-3 fa-instagram"></i></a>
+                            <a href='https://vimeo.com/filliboya' class='text-white' target='_BLANK'><i class="fab fs-18 pe-3 fa-vimeo-v"></i></a>
+                            <a href='http://www.youtube.com/user/filliboyaofficial' class='text-white' target='_BLANK'><i class="fab fs-18 pe-3 fa-youtube"></i></a>
+                            <a href='https://www.pinterest.com/filliboya/' class='text-white' target='_BLANK'><i class="fab fs-18 pe-3 fa-pinterest"></i></a>
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-4 col-xl-4 mx-auto mb-2 text-start">
+                        <h5 class="fs-18">
+                            Filli Boya E-bültenine abone olun,<br> Yenilikleri ve fırsatları takip edin
+                        </h5>
+                        <p class="fs-13 mt-4 pt-3 text-white">
+                            <input class="me-2" type="checkbox" id="aydinlatmaMetni" name="aydinlatmaMetni" value="">
+                            <a href="/kvkk-aydinlatma-metni" class='text-white'>KVKK aydınlatma metnini</a> okudum, bilgilendim.
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-4 col-xl-4 mx-auto mb-2 text-start wrapper">
+                        <input type="mail" placeholder="E-posta adresiniz" class="emailBox mail_email">
+                        <input type="button" value="Abone Ol" class="aboneBtn ms-2 send_mail_customer">
+                        <p class="fs-13 mt-4 pt-3 text-white">
+                            <input class="me-2" type="checkbox" id="mail_customer_check" name="acikRiza" value=""> Aksi tarafımca bildirilene dek, Betek Boya ve Kimya Sanayi A.Ş.’nin Filli Boya dahil tüm markaları ile ilgili kampanya, duyuru, hizmetler
+                            ve tanıtım faaliyetleri vb. ile ilgili olarak e-posta yoluyla şahsıma bilgilendirme yapılmasına ve iletişim kurulmasına izin veriyorum.
+                        </p>
+                    </div>
+                </div>
+                <div class="row py-4 text-start">
+                    <div class="col-12 col-lg-6 col-xl-6">
+                        © Filli Boya 2022. Tüm Hakları Saklıdır.
+                    </div>
+                    <div class="col-12 col-lg-6 col-xl-6 text-start text-md-end text-lg-end text-xl-end">
+                        <img class="pe-2 w-7" src="./uploads/visa-logo.png">
+                        <img class="pe-2 w-7" src="./uploads/mastercard-logo.png">
+                        <img class="pe-2 w-15" src="./uploads/paynet-logo.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <footer class="text-center text-lg-start bg-footer text-white d-block d-md-none d-lg-none d-xl-none">
+        <section class="pt-3">
+            <div class="container">
+                <div class="row">
+                    <button class="accordion">Popüler Kategoriler</button>
+                    <div class="panel">
+                        <p class="mb-2">
+                            <a href='/urunler/boya/ic-cephe-boyalari' class="text-white text-decoration-none">
+İç Cephe Boyaları
+</a>
+                        </p>
+                        <p class="mb-2">
+                            <a href='/urunler/boya/dis-cephe-boyalari' class="text-white text-decoration-none">
+Dış Cephe Boyaları
+</a>
+                        </p>
+                        <p class="mb-2">
+                            <a href='/renkler/ic-cephe-renkleri' class="text-white text-decoration-none">
+İç Cephe Renkleri
+</a>
+                        </p>
+                        <p class="mb-2">
+                            <a href='/renkler/dis-cephe-renkleri' class="text-white text-decoration-none">
+Dış Cephe Renkleri
+</a>
+                        </p>
+                        <p class="mb-2">
+                            <a href='/profesyonel-urunler/mobilya-boyalari' class="text-white text-decoration-none">
+Mobilya Boyaları
+</a>
+                        </p>
+                        <p class="mb-2">
+                            <a href='/urunler/boya/ic-cephe-boyalari/ic-cephe-macun-ve-astarlar' class="text-white text-decoration-none">
+Macun ve Astarlar
+</a>
+                        </p>
+                        <p class="mb-2">
+                            <a href='/profesyonel-urunler/yapi-kimyasallari' class="text-white text-decoration-none">
+Yapı Kimyasalları
+</a>
+                        </p>
+                        <p class="mb-2">
+                            <a href='/urunler/boya/ic-cephe-boyalari/ic-cephe-tavan-boyalari' class="text-white text-decoration-none">
+Tavan Boyaları
+</a>
+                        </p>
+                        <p class="mb-2">
+                            <a href='/urunler/ev-bakimi-ve-hobi' class="text-white text-decoration-none">
+Ev Bakım ve Hobi Boyaları
+</a>
+                        </p>
+                        <p class="mb-2">
+                            <a href='/renkler/ic-cephe-renkleri/yatak-odasi' class="text-white text-decoration-none">
+Yatak Odası Renkleri
+</a>
+                        </p>
+                    </div>
+                    <button class="accordion">Popüler Ürünler</button>
+                    <div class="panel">
+                        <p class="mb-2">
+                            <a href='/urun/momento-silan_1.25LT' class="text-white text-decoration-none">
+Momento Silan
+</a>
+                        </p>
+                        <p class="mb-2">
+                            <a href='/urun/momento-max_1.25LT' class="text-white text-decoration-none">
+Momento Max
+</a>
+                        </p>
+                        <p class="mb-2">
+                            <a href='/urun/filli-boya-yagli-boya-parlak' class="text-white text-decoration-none">
+Filli Boya Yağlı Boya
+</a>
+                        </p>
+                        <p class="mb-2">
+                            <a href='/urun/panel-kapi-boyasi' class="text-white text-decoration-none">
+Panel Kapı Boyası
+</a>
+                        </p>
+                        <p class="mb-2">
+                            <a href='/urun/aqualux_2.5LT' class="text-white text-decoration-none">
+Aqualux
+</a>
+                        </p>
+                        <p class="mb-2">
+                            <a href='/urun/momento-max-cleanix' class="text-white text-decoration-none">
+Momento Max Cleanix
+</a>
+                        </p>
+                        <p class="mb-2">
+                            <a href='/urun/momento-tek_2.5LT' class="text-white text-decoration-none">
+Momento Tek
+</a>
+                        </p>
+                        <p class="mb-2">
+                            <a href='urun/sentomaxx-mat-sentetik-boya' class="text-white text-decoration-none">
+Sentomaxx Sentetik Boya
+</a>
+                        </p>
+                        <p class="mb-2">
+                            <a href='/urun/sentomaxx-ipeksi-mat-sentetik-boya' class="text-white text-decoration-none">
+Sentomaxx İpeksi Mat
+</a>
+                        </p>
+                        <p class="mb-2">
+                            <a href='/urun/momento-life' class="text-white text-decoration-none">
+Momento Life
+</a>
+                        </p>
+                    </div>
+                    <button class="accordion">Popüler Renkler</button>
+                    <div class="panel">
+                        <p class="mb-2">
+                            <a href='/renk/kirik-beyaz' class="text-white text-decoration-none">
+Kırık Beyaz Rengi
+</a>
+                        </p>
+                        <p class="mb-2">
+                            <a href='/renk/cakilli-kum' class="text-white text-decoration-none">Çakıllı Kum Rengi </a>
+                        </p>
+                        <p class="mb-2"><a href='/renk/aydan' class="text-white text-decoration-none">Aydan Rengi</a></p>
+                        <p class="mb-2"><a href='/renk/fildisi' class="text-white text-decoration-none">Fildişi Rengi</a></p>
+                        <p class="mb-2"><a class='text-white text-decoration-none' href="/renk/andezit-60">Andezit Rengi</a></p>
+                        <p class="mb-2"><a href='/renk/sampanya' class="text-white text-decoration-none">Şampanya Rengi</a></p>
+                        <p class="mb-2"><a href='/renk/haki' class="text-white text-decoration-none">Haki Rengi</a></p>
+                        <p class="mb-2"><a class='text-white text-decoration-none' href="renk/acik-mavi">Açık Mavi Rengi</a></p>
+                        <p class="mb-2"><a href='/renk/bej-15' class="text-white text-decoration-none">Bej Rengi</a></p>
+                        <p class="mb-2"><a href='/renk/frezya' class="text-white text-decoration-none">Frezya Rengi</a></p>
+                    </div>
+                    <button class="accordion">Kurumsal </button>
+                    <div class="panel">
+                        <p class="mb-2">
+                            <a href='yardim/sss' class="text-white text-decoration-none">
+Hakkımızda
+</a>
+                        </p>
+                        <p class="mb-2"><a href='/yardim/islem-rehberi' class='text-white text-decoration-none cursor-pointer'>Kurumsal Sosyal Sorumluluk</a></p>
+                        <p class="mb-2"><a href='/hakkimizda/basin-odasi' class='text-white text-decoration-none cursor-pointer'>Basın Odası</a></p>
+                    </div>
+                    <button class="accordion">Müşteri Hizmetleri</button>
+                    <div class="panel">
+                        <p class="mb-2">
+                            <a href='iletisim/iletisim-formu' class="text-white text-decoration-none">
+İletişim Formu
+</a>
+                        </p>
+                        <p class="mb-2"><a href='/iletisim/satis-noktalari' class="text-white text-decoration-none">Satış Noktaları</a></p>
+                        <p class="mb-2"><a href='/hizmetler/renk-danisma' class="text-white text-decoration-none">Renk Danışma</a></p>
+                        <p class="mb-2"><a href='https://filliustam.com/' class="text-white text-decoration-none">Filli Ustam</a></p>
+                        <p class="mb-2"><a href='/yardim/sss' class="text-white text-decoration-none">Sıkça Sorulan Sorular</a></p>
+                        <p class="mb-2"><a href='https://www.dalmacyali.com.tr/hizmetlerimiz/ucretsiz-kesif' class="text-white text-decoration-none">Ücretsiz Yalıtım Keşif Hizmeti</a></p>
+                        <p class="mb-2"><a href='/yardim/islem-rehberi' class="text-white text-decoration-none">İşlem Rehberi</a></p>
+                        <p class="mb-2"><a href='https://e-sirket.mkk.com.tr/esir/Dashboard.jsp#/sirketbilgileri/10852' class="text-white text-decoration-none">Bilgi Toplumu Hizmetleri</a></p>
+                        <p class="mb-2"><a href='/kullanim-kosullari' class="text-white text-decoration-none">İnternet Sitesi Kullanım Koşulları</a></p>
+                        <p class="mb-2"><a href='/uploads/kvkk-talep-formu.pdf' class="text-white text-decoration-none">KVKK Talep Formu</a></p>
+                        <p class="mb-2"><a href='/kvkk-aydinlatma-metni' class="text-white text-decoration-none">KVKK Aydınlatma Metni</a></p>
+                    </div>
+                </div>
+                <div class="row mt-3 border-bottom">
+                    <div class="col-12 col-md-4 col-lg-4 col-xl-4 text-start mb-2">
+                        <img src="./uploads/filli-logo.png" class="w-20">
+                        <p class="mt-1 pt-3 text-white">
+                            <i class="fab fs-18 pe-3 fa-facebook-f"></i>
+                            <i class="fab fs-18 pe-3 fa-twitter"></i>
+                            <i class="fab fs-18 pe-3 fa-linkedin-in"></i>
+                            <i class="fab fs-18 pe-3 fa-instagram"></i>
+                            <i class="fab fs-18 pe-3 fa-vimeo-v"></i>
+                            <i class="fab fs-18 pe-3 fa-youtube"></i>
+                            <i class="fab fs-18 pe-3 fa-pinterest"></i>
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-4 col-xl-4 mx-auto mb-2 text-start wrap">
+                        <h5 class="fs-18">
+                            Filli Boya E-bültenine abone olun,<br> Yenilikleri ve fırsatları takip edin
+                        </h5>
+                        <input type="mail" placeholder="E-posta adresiniz" class="emailBox mail_email">
+                        <input type="button" value="Abone Ol" class="aboneBtn ms-2 send_mail_customer">
+                        <p class="fs-13 mt-4 pt-3 text-white">
+                            <input class="me-2" type="checkbox" id="mail_customer_check" name="acikRiza" value=""> Aksi tarafımca bildirilene dek, Betek Boya ve Kimya Sanayi A.Ş.’nin Filli Boya dahil tüm markaları ile ilgili kampanya, duyuru, hizmetler
+                            ve tanıtım faaliyetleri vb. ile ilgili olarak e-posta yoluyla şahsıma bilgilendirme yapılmasına ve iletişim kurulmasına izin veriyorum.
+                        </p>
+                    </div>
+                </div>
+                <div class="row py-4 text-start">
+                    <div class="col-12 col-lg-6 col-xl-6">
+                        © Filli Boya 2021. Tüm Hakları Saklıdır.
+                    </div>
+                    <div class="col-12 col-lg-6 col-xl-6 text-start text-md-end text-lg-end text-xl-end">
+                        <img class="pe-2 w-7" src="./uploads/visa-logo.png">
+                        <img class="pe-2 w-7" src="./uploads/mastercard-logo.png">
+                        <img class="pe-2 w-15" src="./uploads/paynet-logo.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <div class="modal fade popup-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header" style="border-bottom:0px">
+                    <h4 class="modal-title semi-bold fs-30">Bilgilendirme</h4>
+                    <button type="button" class="close text-black" style='opacity:1' data-bs-dismiss="modal" aria-label="Close"><img src="./uploads/close-icon.png"></button>
+                </div>
+                <div class="modal-body">
+                    Değerli Müşterilerimiz , 08.07.2022 – 17.07.2022 tarihleri arasında yapacağınız alışverişleriniz 18.07.2022 itibari ile kargoya verilecektir.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade calculate-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header" style="border-bottom:0px">
+                    <h4 class="modal-title semi-bold fs-30">Kolay Boya Hesabı</h4>
+                    <button type="button" class="close text-black" style='opacity:1' data-bs-dismiss="modal" aria-label="Close"><img src="./uploads/close-icon.png"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="fw-bold fs-14"> Kaç m<sup>2</sup> alan boyamak istiyorsunuz?</p>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <label>Tavan m<sup>2</sup></label>
+                            <input type="number" class="form-control p-10 h-auto b-rad-25 tavan">
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <label>Duvar m<sup>2</sup></label>
+                            <input type="number" class="form-control p-10 h-auto b-rad-25 duvar">
+                        </div>
+                    </div>
+                    <p class="fw-bold fs-14 m-t-20 m-b-0">Boyamak istediğiniz yüzey</p>
+                    <div class="row">
+                        <div class="col-12 fs-14">
+                            <div class="radio">
+                                <label>
+<input class='me-2' type="radio" name="yuzey" value="1">Su bazlı eski boyalı yüzey
+</label>
+                            </div>
+                            <div class="radio">
+                                <label>
+<input class='me-2' type="radio" name="yuzey" value="2">Yeni alçı/sıva uygulanmış yüzey <i data-toggle="tooltip" data-placement="top" title="" class="fs-14 text-green md hydrated fas fa-question-circle" style="margin-bottom:-9px" role="img" aria-label="help circle" data-original-title="Duvar yüzeylerinin pürüzsüz ve temiz bir yüzey haline getirilmesi için uygulanan toz halinde, ince bir malzemeden elde edilen sıva türüdür."></i>
+</label>
+                            </div>
+                        </div>
+                        <div class="col-12 fs-14">
+                            <div class="radio">
+                                <label>
+<input class='me-2' type="radio" name="yuzey" value="1">Yeni macun uygulanmış yüzey <i data-toggle="tooltip" data-placement="top" title="" class="fs-14 text-green md hydrated fas fa-question-circle" style="margin-bottom:-9px" role="img" aria-label="help circle" data-original-title="Macunlar, duvar yüzeylerinde çatlak, delik vb. sıva bozulmalarını kapatmak amacıyla astar kullanımından önce uygulanmalıdır."></i>
+</label>
+                            </div>
+                            <div class="radio">
+                                <label>
+<input class='me-2' type="radio" name="yuzey" value="3">Sentetik bazlı eski boyalı yüzey
+</label>
+                            </div>
+                        </div>
+                        <div class="col-12 m-t-20">
+                            <div class="btn dark-btn p-10 calculate-paint">Hesapla</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="result text-start w-100"></div>
+                    <p class="text-start fs-11"><i><strong>Not:</strong> Hesaplanan malzeme miktarları maksimum değerler olup, yüzey düzgünlüğüne ve emiciliğine bağlı olarak değişebilir. Kesin sarfiyat için kontrollü numune yapılmalıdır.</i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade information-modal">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title semi-bold fs-30"></h4>
+                    <button type="button" class="close text-black" style='opacity:1' data-bs-dismiss="modal" aria-label="Close"><img src="./uploads/close-icon.png"></button>
+                </div>
+                <div class="modal-body">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn dark-btn rounded-pill px-4" data-bs-dismiss="modal">Tamam</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="ETBIS" class='bg-footer text-center pb-3'>
+        <div id="1556042472171856">
+            <a href="https://etbis.eticaret.gov.tr/sitedogrulama/1556042472171856" target="_blank">
+                <img style='width:100px; height:120px' src="data:image/jpeg;base64, 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"
+                />
+            </a>
+        </div>
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/enquire.js/2.1.2/enquire.min.js'></script>
+    <script src="./script.js"></script>
+    <script src="https://betek-bo.serdoo.com/api/widget/F8E1E2CADC90F7B4EF459C8E1B51106EBB27FBCB/chat/web-client"></script>
+    <script src='assets/js/main.js?v=0.111'></script>
+    <script src='assets/js/menu.js?v=0.111'></script>
+
+</body>
+
+</html>

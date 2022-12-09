@@ -1,0 +1,11 @@
+<svg id="vuesax_linear_search-normal" data-name="vuesax/linear/search-normal" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#292d32;stroke-linecap:round;stroke-linejoin:round}
+        </style>
+    </defs>
+    <g id="search-normal">
+        <path id="Vector" class="cls-1" d="M20.066 10.033A10.033 10.033 0 1 1 10.033 0a10.033 10.033 0 0 1 10.033 10.033z" transform="translate(1.331 1.524)"/>
+        <path id="Vector-2" data-name="Vector" class="cls-1" d="M6.968 6.731 0 0" transform="translate(18.701 18.938)"/>
+    </g>
+</svg>
